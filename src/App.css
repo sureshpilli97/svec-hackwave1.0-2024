@@ -70,6 +70,7 @@ h2 {
 .selector {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ff0000;
+  text-align: center;
   font-size: 1.5rem;
 }
 
@@ -183,4 +184,46 @@ h2 {
 .powered-by img {
   width: 4rem;
   opacity: 0.9;
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .domain-list {
+    width: 90%;
+    height: auto;
+  }
+
+  .domain-list h2 {
+    font-size: 1.5rem;
+  }
+
+  .domain-list>ul {
+    font-size: 1.2rem;
+  }
+
+  .select-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .result h2 {
+    font-size: 2rem;
+  }
+
+  .countdown-circle {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+
+  .powered-by {
+    padding: 0 1rem;
+  }
 }
