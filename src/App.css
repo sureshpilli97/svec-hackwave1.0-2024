@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Almendra SC', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('./assets/HogwartsImage.jpg') no-repeat;
+  background-size: cover;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.header {
+  color: #ffd700;
+}
+
+.header h1 {
+  font-size: 4rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.header h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #582c92;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.domain-list {
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffd700;
+  width: 50%;
+  height: 40%;
+  margin: 2rem auto;
+}
+
+.domain-list h2 {
+  font-size: 2rem;
+}
+
+.domain-list>ul {
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.selector {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+
+.select-btn {
+  background-color: #4b2d73;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  color: #fff;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.select-btn:hover {
+  background-color: #ff0000;
+  box-shadow: 0 0 15px 5px #ffd700;
+}
+
+.result {
+  margin-top: 1rem;
+  color: #ffd700;
+  text-shadow: 3px 3px 5px #000;
+  position: relative;
+}
+
+.result h2 {
+  font-size: 3rem;
+}
+
+.countdown-circle {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  border: 5px solid #ffd700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: countdownPulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes countdownPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 8px 5px rgba(255, 215, 0, 0.5);
+  }
+
+  100% {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 8px rgba(255, 215, 0, 0.8);
+  }
+}
+
+.reveal-animation {
+  animation: surpriseReveal 1s ease-out, glowing 1.5s infinite alternate;
+}
+
+@keyframes surpriseReveal {
+  0% {
+    transform: scale(0.5) rotate(10deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.1) rotate(-10deg);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+  }
+
+  50% {
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+  }
+
+  100% {
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+  }
+}
+
+.powered-by {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+  width: 100vw;
+  padding: 0 2rem;
+  color: #fff;
+  opacity: 0.8;
+  text-shadow: 2px 2px 4px #000;
+
+  >* {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.powered-by img {
+  width: 4rem;
+  opacity: 0.9;
+}
