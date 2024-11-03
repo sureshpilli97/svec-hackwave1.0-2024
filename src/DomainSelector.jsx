@@ -6,9 +6,9 @@ const DomainSelector = () => {
     const domainNames = [
         'Education',
         'Health',
-        'Transportation',
-        'Magic of AI',
-        'Technology'
+        'Finance',
+        'Entertainment',
+        'Tourism'
     ];
 
     const [countdown, setCountdown] = useState(null);
