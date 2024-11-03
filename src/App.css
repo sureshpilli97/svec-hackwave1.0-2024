@@ -198,6 +198,7 @@ h2 {
   .domain-list {
     width: 90%;
     height: auto;
+    padding: 1rem;
   }
 
   .domain-list h2 {
