@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import unStop from './assets/unStop.webp';
-import Dept from './assets/Dept.png';
 import './App.css';
 
 const DomainSelector = () => {
