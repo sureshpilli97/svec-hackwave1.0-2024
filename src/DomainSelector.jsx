@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import unStop from './assets/unStop.webp';
+import Dept from './assets/Dept.png';
 import './App.css';
 
 const DomainSelector = () => {
     const domainNames = [
-        'Education',
-        'Health',
-        'Finance',
-        'Entertainment',
-        'Tourism'
+        'Education Technology',
+        'Disaster Preparedness and Safety',
+        'Travel and Adventure',
+        'Smart Home Solutions',
+        'Transportation and Mobility',
+        'Food and Nutrition'
     ];
 
     const [countdown, setCountdown] = useState(null);
@@ -37,6 +39,7 @@ const DomainSelector = () => {
             <div className="header">
                 <h1>HackWave 1.0</h1>
                 <h2>Sri Vasavi Engineering College - Department of CAI, AI & ML</h2>
+                {/* <img src={Dept} alt="Department of CAI, AI & ML" /> */}
             </div>
 
             <div className='domain-list'>
